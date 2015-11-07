@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+@blue: #548D13;
+@blueLighter: #67AC18;
+
+header {
+  border-top: 8px solid #333;
+  background: @blue;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@blueLighter', endColorstr='@blue'); /* for IE */
+  background: -webkit-gradient(linear, left top, left bottom, from(@blueLighter), to(@blue)); /* for webkit browsers */
+  background: -moz-linear-gradient(top,  @blueLighter,  @blue); /* for firefox 3.6+ */
+  width: 100%;
+  padding: 50px 0;
+  margin-bottom: 25px;
+
+  h1, h2, p {
+    color: #fff;
+  }
+
+  h1, h2 {
+    font-weight: normal;
+    margin-top: 0;
+  }
+
+  p {
+    margin: 15px 0;
+    line-height: 30px;
+  }
+}
+
+footer {
+  background-color: #333;
+  line-height: 80px;
+  width: 100%;
+
+  a {
+    color: #fff;
+    margin-right: 50px;
+  }
+  a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,54 @@
+#argonbox-overlay {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    background: #000 url(../img/loader.gif) no-repeat scroll center center;
+}
+
+#argonbox-lightbox {
+    position: fixed;
+    z-index: 999;
+    border: 5px solid #fff;
+    border-bottom: none;
+    background: #fff;
+}
+
+#argonbox-lightbox a {
+    text-decoration: none;
+}
+
+#argonbox-description {
+    background-color: #fff;
+    line-height: 32px;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#argonbox-navigation {
+    float: right;
+}
+
+.argonbox-previousBtn, .argonbox-nextBtn {
+    width: 20px;
+    height: 18px;
+    display: block;
+    float: left;
+    margin-top: 5px;
+    text-decoration: none;
+}
+.argonbox-previousBtn:hover, .argonbox-nextBtn:hover {
+    text-decoration: none;
+}
+.argonbox-previousBtn {
+    margin-right: 10px;
+    background: #fff url(../img/left_arrow.png) no-repeat;
+}
+.argonbox-nextBtn {
+    background: #fff url(../img/right_arrow.png) no-repeat;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Argonbox - jQuery lightbox plugin</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../argonbox/css/argonbox.css" rel="stylesheet">
+	<link href="style.less" rel="stylesheet/less">
+	<script src="less.min.js"></script>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="span8">
+					<h1>Argonbox</h1>
+					<p>
+						A really basic and lightweight lightbox plugin for jQuery. Easy to use, modify and expand. Developed in a JavaScript course at Blekinge Institute of Technology.
+					</p>
+				</div>
+				<div class="span4">
+					<h2>Download</h2>
+					<p>
+						<a href="https://github.com/BjornHansson/argonbox" class="btn btn-inverse">GitHub</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="container argonbox">
+		<h2>Demo</h2>
+		<ul class="thumbnails">
+			<li class="span2">
+				<a href="img/butterfly.jpg" title="Beautiful butterfly" class="thumbnail">
+					<img src="img/butterfly-square.jpg" alt="Butterfly" />
+				</a>
+			</li>
+			<li class="span2">
+				<a href="img/chives.jpg" title="Chives" class="thumbnail">
+					<img src="img/chives-square.jpg" alt="Chives" />
+				</a>
+			</li>
+			<li class="span2">
+				<a href="img/sunset.jpg" title="Sunset" class="thumbnail">
+					<img src="img/sunset-square.jpg" alt="Sunset" />
+				</a>
+			</li>
+			<li class="span2">
+				<a href="img/cogwheel.jpg" title="Cogwheel" class="thumbnail">
+					<img src="img/cogwheel-square.jpg" alt="Cogwheel" />
+				</a>
+			</li>
+			<li class="span2">
+				<a href="img/turning-torso.jpg" title="Turning Torso" class="thumbnail">
+					<img src="img/turning-torso-square.jpg" alt="Turning Torso" />
+				</a>
+			</li>
+			<li class="span2">
+				<a href="img/lighthouse.jpg" title="Lighthouse" class="thumbnail">
+					<img src="img/lighthouse-square.jpg" alt="Lighthouse" />
+				</a>
+			</li>
+		</ul>
+		<hr />
+		<h2>Usage</h2>
+		<h4>index.html</h4>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;title&gt;Template&lt;/title&gt;
+  &lt;link href="argonbox/css/argonbox.css" rel="stylesheet"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Hello world!&lt;/h1&gt;
+  &lt;div class="argonbox"&gt;
+    &lt;a href="img/world.jpg" title="Hello world"&gt;
+      &lt;img src="img/world.jpg" alt="World" /&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;script src="http://code.jquery.com/jquery-latest.js"&gt;&lt;/script&gt;
+  &lt;script src="argonbox/js/argonbox.js"&gt;&lt;/script&gt;
+  &lt;script src="main.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+		<h4>main.js</h4>
+<pre>
+$(document).ready(function() {
+  'use strict'; // Prevents certain (unsafe) actions from being taken and throws more exceptions.
+  // Determining when the function is called
+  $('.argonbox a').click(function() {
+    $(this).argonbox({'duration':'fast'});
+    return false; // Prevent the default behavior of the HTML link.
+  });
+});
+</pre>
+
+<hr />
+<div class="alert alert-success">
+	<strong>Tip!</strong> Argonbox looks good on tablets and smartphones.
+</div>
+<div class="alert alert-error">
+	<strong>Heads up!</strong> Argonbox works nice with Bootstrap.
+</div>
+<hr />
+</div>
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<nav class="span12">
+				<a href="http://jquery.com/">jQuery</a>
+				<a href="http://lesscss.org/">LESS</a>
+				<a href="http://code.google.com/p/html5shim/">html5shim</a>
+				<a href="http://twitter.github.com/bootstrap/">Bootstrap</a>
+				<a href="http://validator.w3.org/check/referer">HTML5</a>
+			</nav>
+		</div>
+	</div>
+</footer>
+
+<script src="jquery.min.js"></script>
+<script src="../argonbox/js/argonbox.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
