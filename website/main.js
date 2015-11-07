@@ -5,7 +5,7 @@ $(document).ready(function() {
   $('.argonbox a').click(function() {
     $(this).argonbox({
       'duration': 'fast',
-      'bootstrap': false
+      'bootstrap': true
     });
     return false; // Prevent the default behavior of the HTML link.
   });
